@@ -26,10 +26,10 @@ export default class Cookie
         const cookie = document.cookie;
         const begin = cookie.indexOf(name),
               end = cookie.indexOf(';', begin);
-        if (begin ==-1)
+        if (begin == -1)
             return null;
         return cookie.substring(begin + name.length + 1,
-                                end !=-1 ? end : undefined);
+                                end !== -1 && end);
     }
     
     public static remove(name:string)

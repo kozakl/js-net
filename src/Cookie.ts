@@ -7,18 +7,14 @@ export default class Cookie
     
     public static set(name:string, value:string, days?:number)
     {
-        if (days)
-        {
+        if (days) {
             this.date.setTime(Date.now() + days * 24*60*60*1000);
             
             const expires = this.date.toUTCString();
-            document.cookie = `${name}=${value};
-                               expires=${expires};
-                               path=/`;
+            document.cookie = `${name}=${value}; expires=${expires}; path=/`;
         }
         else
-            document.cookie = `${name}=${value};
-                               path=/`;
+            document.cookie = `${name}=${value}; path=/`;
     }
     
     public static get(name:string)

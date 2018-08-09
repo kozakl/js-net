@@ -4,11 +4,11 @@
   "author": {
     "name": "Luke Kozak",
     "email": "kozakluke@gmail.com",
-    "url": "https://github.com/kozakluke"
+    "url": "https://github.com/kozakl"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kozakluke/net-js"
+    "url": "https://github.com/kozakl/net-ts"
   },
   "scripts": {
     "build": "rm -rf ./dist && tsc",

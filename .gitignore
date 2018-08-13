@@ -4,17 +4,17 @@ node_modules/
 # Dist
 dist/
 
-# Jest
+# Testing
 coverage/
 
 # Mats
 mats/*
 
-# Others
-.idea/
-TODO.txt
-
 # Public
 public/*
 !public/favicon.png
 !public/index.html
+
+# Others
+.idea/
+TODO.txt

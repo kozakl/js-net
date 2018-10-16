@@ -1,6 +1,3 @@
-/**
- * @author kozakluke@gmail.com
- */
 export default function request<T1, T2 = {}>(url:string, data?:T2):Promise<T1>
 {
     if (data)

@@ -1,6 +1,3 @@
-/**
- * @author kozakluke@gmail.com
- */
 export default class Cookie
 {
     private static date = new Date();

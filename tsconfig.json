@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "es5",
+    "module": "esnext",
+    "target": "es6",
     "strict": true,
     "strictNullChecks": false,
     "declaration": true,
@@ -10,7 +10,8 @@
     "lib": [
       "dom",
       "es6",
-      "es7"
+      "es7",
+      "es2017"
     ]
   },
   "include": [

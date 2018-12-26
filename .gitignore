@@ -1,19 +1,11 @@
 # Dependency
 node_modules/
 
-# Dist
-dist/
-
 # Testing
 coverage/
 
-# Mats
-mats/*
-
-# Public
-public/*
-!public/favicon.png
-!public/index.html
+# Dist
+dist/
 
 # Others
 .idea/

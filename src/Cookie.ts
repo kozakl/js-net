@@ -27,8 +27,7 @@ export default class Cookie
             return cookie.substring(begin + name.length + 1, end);
     }
     
-    public static remove(name:string)
-    {
+    public static remove(name:string) {
         this.set(name, '', -1);
     }
 }

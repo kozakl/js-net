@@ -19,14 +19,15 @@ export default class Cookie
         const cookie = document.cookie;
         const begin = cookie.indexOf(name),
               end = cookie.indexOf(';', begin);
-        if (begin == -1)
+        if (begin === -1)
             return null;
-        return cookie.substring(begin + name.length + 1,
-                                end !== -1 && end);
+        else if (end === -1)
+            return cookie.substring(begin + name.length + 1);
+        else
+            return cookie.substring(begin + name.length + 1, end);
     }
     
-    public static remove(name:string)
-    {
+    public static remove(name:string) {
         this.set(name, '', -1);
     }
 }

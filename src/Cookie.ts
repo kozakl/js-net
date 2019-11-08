@@ -2,7 +2,7 @@ export default class Cookie
 {
     private static date = new Date();
     
-    public static set(name:string, value:string, days?:number)
+    public static set(name:string, value:any, days?:number)
     {
         if (days) {
             this.date.setTime(Date.now() + days * 24*60*60*1000);

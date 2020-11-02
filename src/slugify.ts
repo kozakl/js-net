@@ -17,7 +17,7 @@ export default function slugify(str:string) {
         .toLowerCase()
         .replace(/\s+/g, '-')       // replace spaces with -
         .replace(/./g, (char)=>
-            sets[char] || target)   // replace special characters using sets
+            sets[char] || char)   // replace special characters using sets
         .replace(/&/g, '-and-')     // replace & with 'and'
         .replace(/[^\w\-]+/g, '')   // remove all non-word chars
         .replace(/\-\-+/g, '-')     // replace multiple - with single -

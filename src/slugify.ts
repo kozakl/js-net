@@ -1,4 +1,4 @@
-const sets = {
+const sets:{[key: string]:string} = {
     'ą': 'a', 'ä': 'a',
     'ć': 'c',
     'ę': 'e',
